@@ -1,4 +1,4 @@
-Source: gingerbase
+Source: ginger-base
 Section: misc
 Priority: optional
 Maintainer: Lucio Correia <luciojhc@linux.vnet.ibm.com>
@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 10),
                wok-dev
 Homepage: https://github.com/kimchi-project/gingerbase
 
-Package: gingerbase
+Package: ginger-base
 Architecture: all
 Depends: python-apt,
          python-cherrypy3,

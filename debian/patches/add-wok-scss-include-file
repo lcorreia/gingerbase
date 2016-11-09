@@ -1,0 +1,43 @@
+--- a/ui/css/src/gingerbase.scss
++++ b/ui/css/src/gingerbase.scss
+@@ -19,24 +19,24 @@
+  */
+ 
+ // Core variables
+-@import "../../../../../../../ui/css/src/modules/wok-variables";
++@import "modules/wok-variables";
+ 
+ // Core functions
+-@import "../../../../../../../ui/css/src/modules/compact";
++@import "modules/compact";
+ 
+ // Bootstrap mixins
+-@import "../../../../../../../ui/css/src/vendor/bootstrap-sass/bootstrap/mixins";
++@import "vendor/bootstrap-sass/bootstrap/mixins";
+ 
+ // Bootstrap classes
+-@import "../../../../../../../ui/css/src/vendor/bootstrap-sass/bootstrap/grid";
++@import "vendor/bootstrap-sass/bootstrap/grid";
+ 
+ // Compass Mixins
+-@import "../../../../../../../ui/css/src/vendor/compass-mixins/lib/compass";
++@import "vendor/compass-mixins/lib/compass";
+ 
+ // Wok Accordion Mixin
+-@import "../../../../../../../ui/css/src/modules/wok-accordion";
++@import "modules/wok-accordion";
+ 
+ // Hosts
+ @import "modules/host";
+ // Line charts
+-@import "modules/line-chart"
+\ No newline at end of file
++@import "modules/line-chart"
+--- a/ui/css/Makefile.am
++++ b/ui/css/Makefile.am
+@@ -20,4 +20,4 @@
+ 
+ css: src/*.scss src/modules/*.scss
+ 	echo "Compiling .scss file $<"
+-	sassc -s expanded $< gingerbase.css
++	pysassc -I /usr/share/wok/scss -s expanded $< gingerbase.css

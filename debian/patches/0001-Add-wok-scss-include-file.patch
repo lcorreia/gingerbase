@@ -1,3 +1,29 @@
+From cff901db95d5ed53e6b2f52162dd3db5c724d69c Mon Sep 17 00:00:00 2001
+From: Lucio Correia <luciojhc@linux.vnet.ibm.com>
+Date: Mon, 12 Dec 2016 14:24:24 -0200
+Subject: [PATCH] [Gingerbase] Add wok scss include file
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Frédéric Bonnard <frediz@linux.vnet.ibm.com>
+---
+ ui/css/Makefile.am         |  2 +-
+ ui/css/src/gingerbase.scss | 14 +++++++-------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/ui/css/Makefile.am b/ui/css/Makefile.am
+index 8a58b3b..2fb5f0b 100644
+--- a/ui/css/Makefile.am
++++ b/ui/css/Makefile.am
+@@ -20,4 +20,4 @@ dist_css_DATA = gingerbase.css
+ 
+ css: src/*.scss src/modules/*.scss
+ 	echo "Compiling .scss file $<"
+-	sassc -s expanded $< gingerbase.css
++	pysassc -I /usr/share/wok/scss -s expanded $< gingerbase.css
+diff --git a/ui/css/src/gingerbase.scss b/ui/css/src/gingerbase.scss
+index 82717b4..a910f66 100644
 --- a/ui/css/src/gingerbase.scss
 +++ b/ui/css/src/gingerbase.scss
 @@ -19,24 +19,24 @@
@@ -33,11 +59,6 @@
 -@import "modules/line-chart"
 \ No newline at end of file
 +@import "modules/line-chart"
---- a/ui/css/Makefile.am
-+++ b/ui/css/Makefile.am
-@@ -20,4 +20,4 @@
- 
- css: src/*.scss src/modules/*.scss
- 	echo "Compiling .scss file $<"
--	sassc -s expanded $< gingerbase.css
-+	pysassc -I /usr/share/wok/scss -s expanded $< gingerbase.css
+-- 
+2.7.4
+

@@ -1,13 +1,14 @@
 Source: gingerbase
 Section: misc
 Priority: optional
-Maintainer: Frédéric Bonnard <frediz@linux.vnet.ibm.com>
+Maintainer: Lucio Correia <luciojhc@linux.vnet.ibm.com>
 Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9),
                dh-autoreconf,
                dh-python,
                gettext,
                pysassc,
+               python,
                python-lxml,
                xsltproc,
                wok-dev
@@ -16,14 +17,18 @@ Homepage: https://github.com/kimchi-project/gingerbase
 Package: gingerbase
 Architecture: all
 Depends: python-apt,
+         python-cherrypy3,
          python-configobj,
+         python-lxml,
          python-parted,
+         python-psutil,
+         gettext,
          git,
          sosreport,
          wok,
          ${misc:Depends},
          ${python:Depends}
-Description: Gingerbase: basic host management for WoK
- Ginger Base is an open source base host management plugin for Wok
- (Webserver Originated from Kimchi), that provides an intuitive web panel with
- common tools for configuring and managing the Linux systems.
+Description: Basic host management for Kimchi and Ginger
+ Ginger Base is an open source base host management plugin for Kimchi and
+ Ginger plugins of Wok. It provides an intuitive web panel with
+ common tools for monitoring and updating Linux systems.

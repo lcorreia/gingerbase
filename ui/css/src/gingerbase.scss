@@ -21,16 +21,16 @@
 //
 // Wok Variables
 // ----------------------------------------------------------------------------
-@import "../../../../../../../ui/css/src/modules/wok-variables";
+@import "modules/wok-variables";
 
 //
 // Imported functions
 // ----------------------------------------------------------------------------
-@import "../../../../../../../ui/css/src/modules/compact";
-@import "../../../../../../../ui/css/src/vendor/bootstrap-sass/bootstrap/mixins";
-@import "../../../../../../../ui/css/src/vendor/bootstrap-sass/bootstrap/grid";
-@import "../../../../../../../ui/css/src/vendor/compass-mixins/lib/compass";
-@import "../../../../../../../ui/css/src/modules/wok-accordion";
+@import "modules/compact";
+@import "vendor/bootstrap-sass/bootstrap/mixins";
+@import "vendor/bootstrap-sass/bootstrap/grid";
+@import "vendor/compass-mixins/lib/compass";
+@import "modules/wok-accordion";
 
 //
 // Ginger Base variables and classes

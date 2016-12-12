@@ -20,4 +20,4 @@ dist_css_DATA = gingerbase.css
 
 css: src/*.scss src/modules/*.scss
 	echo "Compiling .scss file $<"
-	sassc -s expanded $< gingerbase.css
+	pysassc -I /usr/share/wok/scss -s expanded $< gingerbase.css

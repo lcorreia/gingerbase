@@ -1,4 +1,4 @@
-From cff901db95d5ed53e6b2f52162dd3db5c724d69c Mon Sep 17 00:00:00 2001
+From c53f3288d9e9edcca860815d788949a647d3745c Mon Sep 17 00:00:00 2001
 From: Lucio Correia <luciojhc@linux.vnet.ibm.com>
 Date: Mon, 12 Dec 2016 14:24:24 -0200
 Subject: [PATCH] [Gingerbase] Add wok scss include file
@@ -9,8 +9,8 @@ Content-Transfer-Encoding: 8bit
 Signed-off-by: Frédéric Bonnard <frediz@linux.vnet.ibm.com>
 ---
  ui/css/Makefile.am         |  2 +-
- ui/css/src/gingerbase.scss | 14 +++++++-------
- 2 files changed, 8 insertions(+), 8 deletions(-)
+ ui/css/src/gingerbase.scss | 12 ++++++------
+ 2 files changed, 7 insertions(+), 7 deletions(-)
 
 diff --git a/ui/css/Makefile.am b/ui/css/Makefile.am
 index 8a58b3b..2fb5f0b 100644
@@ -23,42 +23,32 @@ index 8a58b3b..2fb5f0b 100644
 -	sassc -s expanded $< gingerbase.css
 +	pysassc -I /usr/share/wok/scss -s expanded $< gingerbase.css
 diff --git a/ui/css/src/gingerbase.scss b/ui/css/src/gingerbase.scss
-index 82717b4..a910f66 100644
+index f72915b..ea76046 100644
 --- a/ui/css/src/gingerbase.scss
 +++ b/ui/css/src/gingerbase.scss
-@@ -19,24 +19,24 @@
-  */
- 
- // Core variables
+@@ -21,16 +21,16 @@
+ //
+ // Wok Variables
+ // ----------------------------------------------------------------------------
 -@import "../../../../../../../ui/css/src/modules/wok-variables";
 +@import "modules/wok-variables";
  
- // Core functions
+ //
+ // Imported functions
+ // ----------------------------------------------------------------------------
 -@import "../../../../../../../ui/css/src/modules/compact";
-+@import "modules/compact";
- 
- // Bootstrap mixins
 -@import "../../../../../../../ui/css/src/vendor/bootstrap-sass/bootstrap/mixins";
-+@import "vendor/bootstrap-sass/bootstrap/mixins";
- 
- // Bootstrap classes
 -@import "../../../../../../../ui/css/src/vendor/bootstrap-sass/bootstrap/grid";
-+@import "vendor/bootstrap-sass/bootstrap/grid";
- 
- // Compass Mixins
 -@import "../../../../../../../ui/css/src/vendor/compass-mixins/lib/compass";
-+@import "vendor/compass-mixins/lib/compass";
- 
- // Wok Accordion Mixin
 -@import "../../../../../../../ui/css/src/modules/wok-accordion";
++@import "modules/compact";
++@import "vendor/bootstrap-sass/bootstrap/mixins";
++@import "vendor/bootstrap-sass/bootstrap/grid";
++@import "vendor/compass-mixins/lib/compass";
 +@import "modules/wok-accordion";
  
- // Hosts
- @import "modules/host";
- // Line charts
--@import "modules/line-chart"
-\ No newline at end of file
-+@import "modules/line-chart"
+ //
+ // Ginger Base variables and classes
 -- 
 2.7.4
 

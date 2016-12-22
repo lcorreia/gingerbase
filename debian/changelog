@@ -1,7 +1,7 @@
-ginger-base (2.2.1-1) unstable; urgency=low
+ginger-base (2.2.2-1) unstable; urgency=low
 
   * Initial release (Closes: #846598)
   * ginger-base delivers basic functionality previously contained in ginger
     (ITP #775747) and is a dependency for v2 of kimchi and ginger packages.
 
- -- Lucio Correia <luciojhc@linux.vnet.ibm.com>  Mon, 24 Oct 2016 12:09:16 -0200
+ -- Lucio Correia <luciojhc@linux.vnet.ibm.com>  Thu, 22 Dec 2016 15:45:14 -0200

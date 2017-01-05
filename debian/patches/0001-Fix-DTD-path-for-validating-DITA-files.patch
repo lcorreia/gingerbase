@@ -1,0 +1,320 @@
+From d04d34f04e141abb8977133c34413c14663e6f74 Mon Sep 17 00:00:00 2001
+From: Lucio Correia <luciojhc@linux.vnet.ibm.com>
+Date: Thu, 5 Jan 2017 09:56:35 -0200
+Subject: [PATCH] Fix DTD path for validating DITA files
+
+Signed-off-by: Lucio Correia <luciojhc@linux.vnet.ibm.com>
+---
+ ui/pages/help/de_DE/host-dashboard.dita | 2 +-
+ ui/pages/help/de_DE/host-update.dita    | 2 +-
+ ui/pages/help/en_US/host-dashboard.dita | 2 +-
+ ui/pages/help/en_US/host-update.dita    | 2 +-
+ ui/pages/help/es_ES/host-dashboard.dita | 2 +-
+ ui/pages/help/es_ES/host-update.dita    | 2 +-
+ ui/pages/help/fr_FR/host-dashboard.dita | 2 +-
+ ui/pages/help/fr_FR/host-update.dita    | 2 +-
+ ui/pages/help/it_IT/host-dashboard.dita | 2 +-
+ ui/pages/help/it_IT/host-update.dita    | 2 +-
+ ui/pages/help/ja_JP/host-dashboard.dita | 2 +-
+ ui/pages/help/ja_JP/host-update.dita    | 2 +-
+ ui/pages/help/ko_KR/host-dashboard.dita | 2 +-
+ ui/pages/help/ko_KR/host-update.dita    | 2 +-
+ ui/pages/help/pt_BR/host-dashboard.dita | 2 +-
+ ui/pages/help/pt_BR/host-update.dita    | 2 +-
+ ui/pages/help/ru_RU/host-dashboard.dita | 2 +-
+ ui/pages/help/ru_RU/host-update.dita    | 2 +-
+ ui/pages/help/zh_CN/host-dashboard.dita | 2 +-
+ ui/pages/help/zh_CN/host-update.dita    | 2 +-
+ ui/pages/help/zh_TW/host-dashboard.dita | 2 +-
+ ui/pages/help/zh_TW/host-update.dita    | 2 +-
+ 22 files changed, 22 insertions(+), 22 deletions(-)
+
+diff --git a/ui/pages/help/de_DE/host-dashboard.dita b/ui/pages/help/de_DE/host-dashboard.dita
+index fd10fb9..c607de3 100644
+--- a/ui/pages/help/de_DE/host-dashboard.dita
++++ b/ui/pages/help/de_DE/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/de_DE/host-update.dita b/ui/pages/help/de_DE/host-update.dita
+index 768197e..0cf95a8 100644
+--- a/ui/pages/help/de_DE/host-update.dita
++++ b/ui/pages/help/de_DE/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/en_US/host-dashboard.dita b/ui/pages/help/en_US/host-dashboard.dita
+index 1958d60..e3e055d 100644
+--- a/ui/pages/help/en_US/host-dashboard.dita
++++ b/ui/pages/help/en_US/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ <?Pub Sty _display FontColor="red"?>
+ <?Pub Inc?>
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/en_US/host-update.dita b/ui/pages/help/en_US/host-update.dita
+index 50c0dad..8aa4f8c 100644
+--- a/ui/pages/help/en_US/host-update.dita
++++ b/ui/pages/help/en_US/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ <?Pub Sty _display FontColor="red"?>
+ <?Pub Inc?>
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/es_ES/host-dashboard.dita b/ui/pages/help/es_ES/host-dashboard.dita
+index 838e385..2f35ad6 100644
+--- a/ui/pages/help/es_ES/host-dashboard.dita
++++ b/ui/pages/help/es_ES/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/es_ES/host-update.dita b/ui/pages/help/es_ES/host-update.dita
+index d39152f..9b317c1 100644
+--- a/ui/pages/help/es_ES/host-update.dita
++++ b/ui/pages/help/es_ES/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/fr_FR/host-dashboard.dita b/ui/pages/help/fr_FR/host-dashboard.dita
+index b49c287..8fb3bfd 100644
+--- a/ui/pages/help/fr_FR/host-dashboard.dita
++++ b/ui/pages/help/fr_FR/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/fr_FR/host-update.dita b/ui/pages/help/fr_FR/host-update.dita
+index e22dbcb..8fba8aa 100644
+--- a/ui/pages/help/fr_FR/host-update.dita
++++ b/ui/pages/help/fr_FR/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/it_IT/host-dashboard.dita b/ui/pages/help/it_IT/host-dashboard.dita
+index c4dab61..cb60dbb 100644
+--- a/ui/pages/help/it_IT/host-dashboard.dita
++++ b/ui/pages/help/it_IT/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/it_IT/host-update.dita b/ui/pages/help/it_IT/host-update.dita
+index 12f2fec..798dc03 100644
+--- a/ui/pages/help/it_IT/host-update.dita
++++ b/ui/pages/help/it_IT/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/ja_JP/host-dashboard.dita b/ui/pages/help/ja_JP/host-dashboard.dita
+index 0dde6ae..88ceb35 100644
+--- a/ui/pages/help/ja_JP/host-dashboard.dita
++++ b/ui/pages/help/ja_JP/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/ja_JP/host-update.dita b/ui/pages/help/ja_JP/host-update.dita
+index dea8d98..01ec3bc 100644
+--- a/ui/pages/help/ja_JP/host-update.dita
++++ b/ui/pages/help/ja_JP/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/ko_KR/host-dashboard.dita b/ui/pages/help/ko_KR/host-dashboard.dita
+index c3b0276..89e1106 100644
+--- a/ui/pages/help/ko_KR/host-dashboard.dita
++++ b/ui/pages/help/ko_KR/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/ko_KR/host-update.dita b/ui/pages/help/ko_KR/host-update.dita
+index 16f2b3c..23cc055 100644
+--- a/ui/pages/help/ko_KR/host-update.dita
++++ b/ui/pages/help/ko_KR/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/pt_BR/host-dashboard.dita b/ui/pages/help/pt_BR/host-dashboard.dita
+index 5503eed..53c57db 100644
+--- a/ui/pages/help/pt_BR/host-dashboard.dita
++++ b/ui/pages/help/pt_BR/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/pt_BR/host-update.dita b/ui/pages/help/pt_BR/host-update.dita
+index 287839c..4929a1e 100644
+--- a/ui/pages/help/pt_BR/host-update.dita
++++ b/ui/pages/help/pt_BR/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/ru_RU/host-dashboard.dita b/ui/pages/help/ru_RU/host-dashboard.dita
+index 906d221..fe8bb6c 100644
+--- a/ui/pages/help/ru_RU/host-dashboard.dita
++++ b/ui/pages/help/ru_RU/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/ru_RU/host-update.dita b/ui/pages/help/ru_RU/host-update.dita
+index e7705e6..dabf3b0 100644
+--- a/ui/pages/help/ru_RU/host-update.dita
++++ b/ui/pages/help/ru_RU/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/zh_CN/host-dashboard.dita b/ui/pages/help/zh_CN/host-dashboard.dita
+index 7c08c43..d2709b7 100644
+--- a/ui/pages/help/zh_CN/host-dashboard.dita
++++ b/ui/pages/help/zh_CN/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/zh_CN/host-update.dita b/ui/pages/help/zh_CN/host-update.dita
+index 6be084c..d07bc8e 100644
+--- a/ui/pages/help/zh_CN/host-update.dita
++++ b/ui/pages/help/zh_CN/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/zh_TW/host-dashboard.dita b/ui/pages/help/zh_TW/host-dashboard.dita
+index 964a843..27fff9a 100644
+--- a/ui/pages/help/zh_TW/host-dashboard.dita
++++ b/ui/pages/help/zh_TW/host-dashboard.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+diff --git a/ui/pages/help/zh_TW/host-update.dita b/ui/pages/help/zh_TW/host-update.dita
+index 9500de7..a2f4858 100644
+--- a/ui/pages/help/zh_TW/host-update.dita
++++ b/ui/pages/help/zh_TW/host-update.dita
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!--Arbortext, Inc., 1988-2011, v.4002-->
+ <!DOCTYPE cshelp PUBLIC "-//IBM//DTD DITA CSHelp//EN"
+- "..\dtd\cshelp.dtd">
++ "../ditaval.dtd">
+ 
+ 
+ <!--This DITA specialized document type is not supported by the Authoring Tools development team.
+-- 
+2.7.4
+
